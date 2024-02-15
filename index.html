@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gesty Linaga">
+    <meta name="description" content="'Start page' with useful links and embedded Google search.">
+    <title>Startpage</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="time"></h1>
+    <h2 id="date"></h2>
+    <section id="link-boxes">
+      <div class="link-box">
+        <h3>Productivity</h3>
+        <a href="https://github.com">GitHub</a>
+        <a href="https://gitlab.com">GitLab</a>
+        <a href="https://codepen.io">CodePen</a>
+      </div>
+      <div class="link-box">
+        <h3>Info / Docs</h3>
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+        <a href="https://learnxinyminutes.com/">LearnXinYminutes</a>
+        <a href="https://www.w3schools.com/">W3Schools</a>
+      </div>
+      <div class="link-box">
+        <h3>Communicate</h3>
+        <a href="https://mail.google.com">Gmail</a>
+        <a href="https://discord.com">Discord</a>
+      </div>
+      <div class="link-box">
+        <h3>Entertainment</h3>
+        <a href="https://youtube.com">YouTube</a>
+        <a href="https://twitch.tv">Twitch</a>
+      </div>
+    </section>
+    <section id="search-box">
+      <form action="javascript: handleSearch()">
+        <input id="search-input" type="search" name="search" placeholder="Google Search" autocomplete="off">
+        <button id="search-btn" type="submit" for="search-input">Search</button>
+      </form>
+    </section>
+    <p class="hero">
+      Made by:
+      <a class="hero-link" href="https://gesty.dev">gesty</a>
+    </p>
+  </body>
+  <script src="./script.js"></script>
+</html>
