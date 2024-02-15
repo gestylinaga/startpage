@@ -1,4 +1,4 @@
-# Startpage
+# 🌊 Startpage
 Start Page / Home Page / Dashboard
 
 A page with useful links and embedded Google Search
