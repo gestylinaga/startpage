@@ -8,8 +8,3 @@ A page with useful links and embedded Google Search
 **Theme:**
 - Color Scheme - Rose Pine
 - Font - Source Code Pro
-
-<!-- 🛠️ TODO
-  - color icons
-  - userAgent info / logos
--->
