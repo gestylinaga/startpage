@@ -74,7 +74,7 @@ input {
   color: var(--text);
   border: 1px solid var(--foam);
   padding: .5rem;
-  width: 20rem;
+  width: 15rem;
 
   &:focus {
     border: 1px solid var(--iris);

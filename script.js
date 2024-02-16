@@ -95,7 +95,7 @@ const userInfoP = document.getElementById('user-info');
 
 let browser;
 if (userAgent.includes('Firefox')) {
-  browser = 'Firefox';
+  browser = 'Mozilla Firefox';
 } else if (userAgent.includes('Edge') || userAgent.includes('Edg')) {
   browser = 'Microsoft Edge';
 } else if (userAgent.includes('Chrome')) {
