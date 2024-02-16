@@ -89,4 +89,35 @@ searchBtn.addEventListener('click', () => {
   handleSearch();
 })
 
-//console.log(navigator.userAgent);
+// User Info
+const userAgent = window.navigator.userAgent;
+const userInfoP = document.getElementById('user-info');
+
+let browser;
+if (userAgent.includes('Firefox')) {
+  browser = 'Firefox';
+} else if (userAgent.includes('Edge') || userAgent.includes('Edg')) {
+  browser = 'Microsoft Edge';
+} else if (userAgent.includes('Chrome')) {
+  browser = 'Google Chrome';
+} else if (userAgent.includes('Safari')) {
+  browser = 'Apple Safari';
+} else {
+  browser = 'an unknown browser';
+}
+
+let os;
+if (userAgent.includes('Linux')) {
+  os = 'a Linux machine';
+} else if (userAgent.includes('Windows')) {
+  os = 'a Windows machine';
+} else if (userAgent.includes('Macintosh')) {
+  os = 'a Mac OS machine';
+} else if (userAgent.includes('iPhone')) {
+  os = 'an iOS machine';
+} else {
+  os = 'an unknown OS';
+}
+
+const userInfo = `Using ${browser}, on ${os}.`;
+userInfoP.innerText = userInfo;
