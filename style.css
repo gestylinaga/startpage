@@ -34,6 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  text-align: center;
 }
 
 h1 { font-size: 4.5rem; }
@@ -45,12 +46,12 @@ h2 { color: var(--iris); }
   gap: 2rem;
 }
 
+
 .link-box {
   background-color: var(--surface);
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   align-items: center;
   gap: 1rem;
 
@@ -114,4 +115,18 @@ input {
   &:hover {
     color: var(--pine);
   }
+}
+
+@media screen and (max-width: 600px) {
+  body { gap: 1rem; }
+  h1 { font-size: 3rem; }
+
+  #link-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-inline: 1.5rem;
+  }
+
+  .link-box { padding-inline: 1rem;; }
 }
