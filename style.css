@@ -124,9 +124,14 @@ input {
   #link-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: .7rem;
     padding-inline: 1.5rem;
   }
 
   .link-box { padding-inline: 1rem;; }
+
+  .hero {
+    padding-bottom: .5rem;
+    gap: .3rem;
+  }
 }
