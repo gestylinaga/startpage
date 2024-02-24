@@ -8,12 +8,12 @@ function updateTime() {
   let meridiem; // AM or PM
   if (hour > 12) {
     hour -= 12;
-    meridiem = 'PM';
+    meridiem = `<span class="iris">PM</span>`
   } else if (hour === 0) {
     hour = 12;
-    meridiem = 'AM';
+    meridiem = `<span class="foam">AM</span>`;
   } else {
-    meridiem = 'AM';
+    meridiem = `<span class="foam">AM</span>`;
   }
 
   const rawMinutes = currentTime.getMinutes();
@@ -32,8 +32,8 @@ function updateTime() {
     seconds = rawSeconds;
   }
 
-  const time = `${hour}:${minutes}:${seconds} ${meridiem}`;
-  timeDiv.innerText = time;
+  const time = `${hour}<span class="iris">:</span>${minutes}<span class="iris">:</span>${seconds} ${meridiem}`;
+  timeDiv.innerHTML = time;
 }
 
 setInterval(() => {
@@ -72,8 +72,8 @@ switch (dayOfWeek) {
     break;
 }
 
-const dateDisplay = `Today is ${day}, ${date}/${month}/${year}`;
-dateDiv.innerText = dateDisplay;
+const dateDisplay = `Today is <span class="rose">${day}</span>, ${date}<span class="foam">/</span>${month}<span class="foam">/</span>${year}`;
+dateDiv.innerHTML = dateDisplay;
 
 // Search Function
 const searchBtn = document.getElementById('search-btn');
@@ -116,16 +116,16 @@ if (userAgent.includes('Firefox')) {
 
 let os;
 if (userAgent.includes('Linux')) {
-  os = 'a Linux machine';
+  os = ' Linux machine';
 } else if (userAgent.includes('Windows')) {
-  os = 'a Windows machine';
+  os = ' Windows machine';
 } else if (userAgent.includes('Macintosh')) {
-  os = 'a Mac OS machine';
+  os = ' Mac OS machine';
 } else if (userAgent.includes('iPhone')) {
-  os = 'an iOS machine';
+  os = 'n iOS machine';
 } else {
   os = 'an unknown OS';
 }
 
-const userInfo = `Using ${browser}, on ${os}.`;
-userInfoP.innerText = userInfo;
+const userInfo = `Using <span class="rose">${browser}</span>, on a<span class="rose">${os}</span>.`;
+userInfoP.innerHTML = userInfo;
