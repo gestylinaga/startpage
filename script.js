@@ -89,6 +89,14 @@ searchBtn.addEventListener('click', () => {
   handleSearch();
 })
 
+// Jump to seach input keybind
+document.addEventListener('keydown', (e) => {
+  if (e.key === '/') {
+    e.preventDefault();
+    searchInput.focus();
+  }
+})
+
 // User Info
 const userAgent = window.navigator.userAgent;
 const userInfoP = document.getElementById('user-info');
