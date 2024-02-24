@@ -12,6 +12,12 @@
   <body>
     <h1 id="time"></h1>
     <h2 id="date"></h2>
+    <section id="search-box">
+      <form action="javascript: handleSearch()">
+        <input id="search-input" type="search" name="search" placeholder="Google Search" autocomplete="off">
+        <button id="search-btn" type="submit" for="search-input">Search</button>
+      </form>
+    </section>
     <section id="link-boxes">
       <div class="link-box">
         <h3>Productivity</h3>
@@ -37,12 +43,6 @@
       </div>
     </section>
     <p id="user-info"></p>
-    <section id="search-box">
-      <form action="javascript: handleSearch()">
-        <input id="search-input" type="search" name="search" placeholder="Google Search" autocomplete="off">
-        <button id="search-btn" type="submit" for="search-input">Search</button>
-      </form>
-    </section>
     <section class="hero">
       <p>
         Made by:
