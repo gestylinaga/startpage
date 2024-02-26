@@ -79,6 +79,9 @@ dateDiv.innerHTML = dateDisplay;
 const searchBtn = document.getElementById('search-btn');
 const searchInput = document.getElementById('search-input');
 
+// Jump to search input on window load
+window.onload = searchInput.focus();
+
 function handleSearch() {
   const rawInput = searchInput.value;
   const cleanInput = rawInput.replaceAll(' ', '+');
