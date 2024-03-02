@@ -72,7 +72,7 @@ switch (dayOfWeek) {
     break;
 }
 
-const dateDisplay = `Today is <span class="rose">${day}</span>, ${date}<span class="foam">/</span>${month}<span class="foam">/</span>${year}`;
+const dateDisplay = `Today is <span class="gold">${day}</span>, ${date}<span class="foam">/</span>${month}<span class="foam">/</span>${year}`;
 dateDiv.innerHTML = dateDisplay;
 
 // Search Function
@@ -130,5 +130,5 @@ if (userAgent.includes('Linux')) {
   os = 'an unknown OS';
 }
 
-const userInfo = `Using <span class="rose">${browser}</span>, on a<span class="rose">${os}</span>.`;
+const userInfo = `Using <span class="gold">${browser}</span>, on a<span class="gold">${os}</span>.`;
 userInfoP.innerHTML = userInfo;

@@ -8,9 +8,7 @@
   --bg: #16141f;
   --surface: #1f1d2e;
   --text: #e0def4;
-  --love: #eb6f92;
   --gold: #f6c177;
-  --rose: #ebbcba;
   --pine: #31748f;
   --foam: #9ccfd8;
   --iris: #c4a7e7;
@@ -40,9 +38,10 @@ body {
 h1 { font-size: 4.5rem; }
 h2 { color: var(--iris); }
 
-.rose { color: var(--rose); } 
 .iris { color: var(--iris); }
 .foam { color: var(--foam); }
+.pine { color: var(--pine); }
+.gold { color: var(--gold); }
 
 #link-boxes {
   display: flex;
