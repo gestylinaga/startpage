@@ -12,7 +12,9 @@ function updateTime() {
   } else if (hour === 0) {
     hour = 12;
     meridiem = `<span class="foam">AM</span>`;
-  } else {
+  } else if (hour === 12) {
+    meridiem = `<span class="iris">PM</span>`
+  }else {
     meridiem = `<span class="foam">AM</span>`;
   }
 
